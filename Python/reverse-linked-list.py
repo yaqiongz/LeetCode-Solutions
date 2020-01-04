@@ -39,6 +39,7 @@ class Solution2(object):
         if end:
             end.next = head
             head.next = None
+            end = end.next
             return [begin, head]
         else:
             return [head, head]
